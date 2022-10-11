@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!--HTML siempre va a tener dos etiquetas hijas, HEAD y BODY.
+Fuera de estas dos etiquetas no debe haber nada-->
+
+<head> <!--etiqueta HEAD, llevará la informacion que el usuario no ve-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre entrega 1 - De Bonis</title> <!--Esto es 1/2 unico que podría llegar a ver el usuario. Se cambia lo que esra en blanco-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Lexend+Giga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="shortcut icon" href="./asset/img/Sista Renata.jpg" type="image/x-icon"> <!--Esto es 2/2 que puede ver, que es el icono que se ve en la pestaña de la pagina-->
+    <!-- PARA LINKEAR, despues de los href= PONEMOS ./ (y buscamos la ubicacion de lo que queremos)" -->
+</head>
+
+<body> <!--etiqueta BODY (vamos a escribir todo el codigo HTML) llevará la informacion que el usuario ve-->
+    <!--Dentro de body, esxisten tres etiquetas de estrcutura: HEADER - MAIN - FOOTER + ASSIDE(que puede estar o no)-->
+    <header>
+        <seccion class="header1"> <!-- SECCION N°1: LA PARTE DE ARRIBA DE TODO DONDE DICE ENVIOS GRATIS-->
+            <div>
+                <p>Envios gratis a partir de $10000
+            </div>
+        </seccion> 
+        <section class="header2"> <!-- SECCION N°2: MENU+LOGO+ICONOS-->
+            <section class="header2 box1"> <!-- CAJA1 MENÚ-->
+                <img src="./asset/img/Icono menu hamburguesa.svg" alt="Menu icon">
+                <h1>MENÚ</h1>
+            </section>
+            <section  class="header2 box2"> <!-- CAJA2 LOGO-->
+                <img src="LA IMAGEN DEL LOGO DE LA MARCA" alt="Logo de marca">
+            </section>
+            <section  class="header2 box3"> <!-- CAJA3 buscar-perfil-fav-carrito-->
+                <div><a href="Enlace para buscar"><img src="./asset/img/Icono Buscar.svg" alt="Icono de buscar" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                </div>
+                <div><a href="Enlace para perfil"><img src="./asset/img/Icono Perfil.svg" alt="Icono de perfil" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                </div>
+                <div><a href="Enlace para favoritos"><img src="./asset/img/Icono Favoritos.svg" alt="Icono de favoritos" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                </div>
+                <div><a href="Enlace para carrito"><img src="./asset/img/Icono Carrito.svg" alt="Icono de carrito" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-foto-principal"> <!-- SECCION 1 del main (imagen grande q se ve debajo del header)-->
+            <img src="./asset/img/Principal home 1.svg" alt="imagen princial Sista Renata"> 
+        </section>
+        <section class="main-sec2"> <!-- SECCION 2 del main (Titulo + Cards)-->
+            <h2> Favoritos </h2> <!-- Seccion:Titulo-->
+            <section> <!-- Seccion:Cards-->
+                <div class="cards-productos-inicio"> <!-- Card n°1-->
+                    <img src="/asset/img/Foto card pag princ 1.jpg" alt="imagen del producto">
+                    <a href="url">Nombre del producto<br>precio</a>
+                </div>
+                <div class="cards-productos-inicio"> <!-- Card n°2-->
+                    <img src="/asset/img/Foto card pag princ 2.jpg" alt="imagen del producto">
+                    <a href="url">Nombre del producto<br>precio</a>
+                </div>
+                <div class="cards-productos-inicio"> <!-- Card n°3-->
+                    <img src="/asset/img/Foto card pag princ 3.jpg" alt="imagen del producto">
+                    <a href="url">Nombre del producto<br>precio</a>
+                </div>
+                <div class="cards-productos-inicio"> <!-- Card n°4-->
+                    <img src="/asset/img/Foto card pag princ 4.jpg" alt="imagen del producto">
+                    <a href="url">Nombre del producto<br>precio</a>
+                </div>
+            </section>
+        </section>
+        <section class="main-sec3"> <!-- SECCION 3 del main (donde esta la parte de redes sociales)-->
+            <h2> Seguinos en nuestras redes sociales </h2> <!-- Seccion:Titulo-->
+            <section>
+            <div><a href="https://www.instagram.com/sista.renata/"><img src="./asset/img/Logo instagram.svg" alt="logo instagram" style="width:54px;height:54px;"></a>
+            </div>
+            <div><a href="aca va el fb de la marca"><img src="./asset/img/Logo Facebook1.svg" alt="logo instagram" style="width: 54px;height: 54px;left: 672px;top: 640px;"></a>
+            </div>
+            </section>
+        </section>
+        <section class="main-sec4"> <!-- SECCION 4 del main (CARDS: contacto-envios-pagos-cambios)-->
+                <div> <!-- Card n°1 CONTACTO-->
+                    <h3>Contacto</h3>
+                    <a href="aca va enlace a la pagina de contacto"><img src="/asset/img/Dibujo CONTACTO.svg" alt="Contacto" style="width:148px;height:147px;"></a>
+                </div>
+                <div> <!-- Card n°2 METODOS DE ENVIO-->
+                    <h3>Metodos<br>envío</h3>
+                    <a href="aca va enlace a la pagina de Metodos de envío"><img src="/asset/img/Dibujo METODO DE ENVIO.svg" alt="Metodos de envio" style="width:148px;height:147px;"></a>
+                </div>
+                <div> <!-- Card n°1 FORMAS DE PAGO-->
+                    <h3>Formas<br>de pago</h3>
+                    <a href="aca va enlace a la pagina de Formas de pago"><img src="/asset/img/Dibujo FORMAS DE PAGO.svg" alt="Formas de pago" style="width:148px;height:147px;"></a>
+                </div>
+                <div><!-- Card n°1 CAMBIOS-->
+                    <h3>Cambios</h3>
+                    <a href="aca va enlace a la pagina de Cambios"><img src="/asset/img/Dibujo CONTACTO.svg" alt="Cambios" style="width:148px;height:147px;"></a>
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="foteer footer-1"> <!--CAJA 1 logo marca-->
+            <img src="LOGO DE MARCA" alt="Logo SISTA RENATA">
+        </section>
+        <section> <!--CAJA 2 Menu-->
+            <div>
+                <nav> <!--barra de navegacion-->
+                    <ul class="lista-productos-footer">
+                        <li><a href="/pages/categoria nuevo.html">NUEVO</a></li>
+                        <li><a href="">TOPS</a></li>
+                        <li><a href="">REMERAS</a></li>
+                        <li><a href="">CALZAS</a></li>
+                        <li><a href="">ACCESORIOS</a></li>
+                        <li><a href="">REBAJAS</a></li>
+                        <li><a href="">TABLA DE TALLES</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="foteer footer-3"> <!--CAJA 1 Contactos-->
+            <div> <!-- Card Intagram-->
+                <h4>sista.renata</h4>
+                <a href="aca va enlace al insta"><img src="./asset/img/Logo Instagram2.svg" alt="Logo Instagram" style="height: 24px;width: 24px;left: 1113px;top: 1936px;border-radius: 0px;"></a>
+            </div>
+            <div> <!-- Card Facebook-->
+                <h4>Sista Renata</h4>
+                <a href="aca va enlace a al facebook"><img src="./asset/img/Logo Facebook2.svg" alt="Logo Facebook" style="height: 24px;width: 24px;left: 1113px;top: 1936px;border-radius: 0px;"></a>
+            </div>
+            <div> <!-- Card Whatsapp-->
+                <h4>+5491161420000</h4>
+                <a href="aca va enlace al whatsapp"><img src="./asset/img/Logo WhatsApp.svg" alt="Logo Whatsapp" style="height: 24px;width: 24px;left: 1113px;top: 1936px;border-radius: 0px;"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
