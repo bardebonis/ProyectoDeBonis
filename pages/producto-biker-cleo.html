@@ -18,28 +18,36 @@
 <body>
 
     <header>
-        <seccion class="header-inicio-de-pagina"> <!-- SECCION N°1: LA PARTE DE ARRIBA DE TODO DONDE DICE ENVIOS GRATIS-->
+        <seccion class="header1"> <!-- SECCION N°1: LA PARTE DE ARRIBA DE TODO DONDE DICE ENVIOS GRATIS-->
             <div>
                 <p>Envios gratis a partir de $10000
             </div>
         </seccion> 
-        <section class="header-contenedor"> <!-- SECCION N°2: MENU+LOGO+ICONOS-->
-            <section class="header-int-izq"> <!-- CAJA1 MENÚ-->
-                <img src="../asset/img/Icono menu hamburguesa.svg" alt="Menu icon">
+        <section class="header2"> <!-- SECCION N°2: MENU+LOGO+ICONOS-->
+            <section class="header2 box1"> <!-- CAJA1 MENÚ-->
+                <img src="../asset/img/icono-menu-hamburg.svg" alt="Menu icon">
                 <h1>MENÚ</h1>
             </section>
-            <section> <!-- CAJA2 LOGO-->
-                <img src="LA IMAGEN DEL LOGO DE LA MARCA" alt="Logo de marca">
+            <section class="header2 box2"> <!-- CAJA2 LOGO-->
+                <h5>SISTA RENATA</h5>
             </section>
-            <section> <!-- CAJA3 buscar-perfil-fav-carrito-->
-                <div><a href="Enlace para buscar"><img src="../asset/img/Icono Buscar.svg" alt="Icono de buscar" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+            <section  class="header2 box3"> <!-- CAJA3 buscar-perfil-fav-carrito-->
+                <div><a href="Enlace para buscar"><img src="../asset/img/icono-buscar.svg" alt="Icono de buscar" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para perfil"><img src="../asset/img/Icono Perfil.svg" alt="Icono de perfil" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para perfil"><img src="../asset/img/icono-perfil.svg" alt="Icono de perfil" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para favoritos"><img src="../asset/img/Icono Favoritos.svg" alt="Icono de favoritos" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para favoritos"><img src="../asset/img/icono-favoritos.svg" alt="Icono de favoritos" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para carrito"><img src="../asset/img/Icono Carrito.svg" alt="Icono de carrito" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para carrito"><img src="../asset/img/icono-carrito.svg" alt="Icono de carrito" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
+            </section>
+            <section class="header2 box4"> <!-- CAJA4 SOLO PARA MOBILE-->
+                <form>
+                    <a href="Enlance para buscar"><img src="../asset/img/Lupa-box4-mobile.svg" alt=""></a>
+                    <div>
+                        <input class="buscar-mobile" type="buscar" placeholder="Buscar">
+                    </div>
+                </form>
             </section>
         </section>
     </header>
@@ -49,28 +57,38 @@
     <main>
         <section class="historial-main"> <!-- Inicio > Nuevo > Biker Cleo -->
             <a href="../index.html">Inicio ></a>
-            <a href="../pages/categoria nuevo.html">Nuevo</a>
+            <a href="../pages/categoria nuevo.html">Nuevo ></a>
             <h4>Biker Cleo</h4>
         </section>
-        <section class="img-xproducto"> <!-- imagenes-->
-            <img src="../asset/img/Imagen biker cleo 1.svg" alt="Imagen Biker Cleo 1">
-            <img src="../asset/img/Imagen biker cleo 2.svg" alt="Imagen Biker Cleo 2">
-            <img src="../asset/img/Imagen biker cleo 3.svg" alt="Imagen Biker Cleo 3">
-        </section>
-        <section>
-            <h4>BIKER CLEO</h4>
-            <h4>$0000</h4>
-            <h5>Talles</h5>
-            <button class=boton-talles>T1</button>
-            <button class=boton-talles>T2</button>
-            <button class=boton-talles>T3</button>
-            <button class=boton-perfil>AGREGAR AL CARRITO</button>
+        <section class="x-producto">
+            <div class="x-p1"> <!-- imagenes-->
+                <img src="../asset/img/Imagen biker cleo 1.svg" alt="Imagen Biker Cleo 1">
+                <img src="../asset/img/Imagen biker cleo 2.svg" alt="Imagen Biker Cleo 2">
+                <img src="../asset/img/Imagen biker cleo 3.svg" alt="Imagen Biker Cleo 3">
+            </div>
+            <div class="x-p2">
+                <div>
+                    <h2>BIKER CLEO</h2>
+                    <h2>$0000</h2>
+                </div>
+                <div>
+                    <h3>Talles</h3>
+                    <div>
+                        <button class=boton-talles>T1</button>
+                        <button class=boton-talles>T2</button>
+                        <button class=boton-talles>T3</button>
+                    </div>
+                </div>
+                <button class=boton-agregar-carrito>Agregar al carrito</button>
+            </div>
         </section>
         <section class="articulosrelacionados">
             <h2>ARTICULOS RELACIONADOS</h2>
-            <div class="cards-productos-inicio"> <!-- Card n°3-->
-                <img src="../asset/img/Foto card pag princ 3.jpg" alt="imagen del producto">
-                <a href="url">Nombre del producto<br>precio</a>
+            <div class="cards-art-relacionados"> <!-- Card n°3-->
+                <div class="car-1">
+                    <img src="../asset/img/foto-card-pag-princ3.jpg" alt="imagen del producto">
+                    <a href="url">Top Cleo<br>$0000</a>
+                </div>
             </div>
         </section>
     </main>

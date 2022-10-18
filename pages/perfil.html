@@ -18,28 +18,36 @@
 <body>
     
     <header>
-        <seccion class="header-inicio-de-pagina"> <!-- SECCION N°1: LA PARTE DE ARRIBA DE TODO DONDE DICE ENVIOS GRATIS-->
+        <seccion class="header1"> <!-- SECCION N°1: LA PARTE DE ARRIBA DE TODO DONDE DICE ENVIOS GRATIS-->
             <div>
                 <p>Envios gratis a partir de $10000
             </div>
         </seccion> 
-        <section class="header-contenedor"> <!-- SECCION N°2: MENU+LOGO+ICONOS-->
-            <section class="header-int-izq"> <!-- CAJA1 MENÚ-->
-                <img src="../asset/img/Icono menu hamburguesa.svg" alt="Menu icon">
+        <section class="header2"> <!-- SECCION N°2: MENU+LOGO+ICONOS-->
+            <section class="header2 box1"> <!-- CAJA1 MENÚ-->
+                <img src="../asset/img/icono-menu-hamburg.svg" alt="Menu icon">
                 <h1>MENÚ</h1>
             </section>
-            <section> <!-- CAJA2 LOGO-->
-                <img src="LA IMAGEN DEL LOGO DE LA MARCA" alt="Logo de marca">
+            <section class="header2 box2"> <!-- CAJA2 LOGO-->
+                <h5>SISTA RENATA</h5>
             </section>
-            <section> <!-- CAJA3 buscar-perfil-fav-carrito-->
-                <div><a href="Enlace para buscar"><img src="../asset/img/Icono Buscar.svg" alt="Icono de buscar" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+            <section  class="header2 box3"> <!-- CAJA3 buscar-perfil-fav-carrito-->
+                <div><a href="Enlace para buscar"><img src="../asset/img/icono-buscar.svg" alt="Icono de buscar" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para perfil"><img src="../asset/img/Icono Perfil.svg" alt="Icono de perfil" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para perfil"><img src="../asset/img/icono-perfil.svg" alt="Icono de perfil" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para favoritos"><img src="../asset/img/Icono Favoritos.svg" alt="Icono de favoritos" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para favoritos"><img src="../asset/img/icono-favoritos.svg" alt="Icono de favoritos" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
-                <div><a href="Enlace para carrito"><img src="../asset/img/Icono Carrito.svg" alt="Icono de carrito" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
+                <div><a href="Enlace para carrito"><img src="../asset/img/icono-carrito.svg" alt="Icono de carrito" style="height: 24px;width: 24px;left: 1261px;top: 80px;border-radius: 0px;"></a>
                 </div>
+            </section>
+            <section class="header2 box4"> <!-- CAJA4 SOLO PARA MOBILE-->
+                <form>
+                    <a href="Enlance para buscar"><img src="../asset/img/Lupa-box4-mobile.svg" alt=""></a>
+                    <div>
+                        <input class="buscar-mobile" type="buscar" placeholder="Buscar">
+                    </div>
+                </form>
             </section>
         </section>
     </header>
@@ -49,35 +57,42 @@
             <a href="../index.html">Inicio ></a>
             <h4>Acceso a cuenta</h4>
         </section>
-        <section> <!-- ACCEDER-->
-            <h2>ACCEDER</h2>
-            <form action="" class="form-nuevo-usuario"> 
-                <label for="Nombre de usuario o correo">Nombre de usuario o correo electrónico</label><br>
-                <input type="text" name="Nombre de usuario o correo electrónico"/><br>
-            </form>
-            <form action="" class="form-nuevo-usuario">
-                <label for="Contraseña">Contraseña</label><br>
-                <input type="text" name="Nombre de usuario o correo electrónico"/><br>
-            </form>
-            <form action="" class="check-recordarme">
-                <input type="checkbox" name="RecordarUsuario">
-                <label for="Recordarme"> Recordarme</label>
-            </form>
-            <button name="button" class="boton-perfil">INGRESAR <!-- BOTON PARA INGRESAR--> 
-            </button>
-            <a href="" class="olvide-contraseña">Olvidé mi contraseña</a>
+        <section class="perfil-acc-reg">
+            <div class="perfil-acc"> <!-- ACCEDER-->
+                <h2>ACCEDER</h2>
+                <form action="" class="form-nuevo-usuario"> 
+                    <label for="Nombre de usuario o correo">Nombre de usuario o correo electrónico</label><br>
+                    <input type="text" name="Nombre de usuario o correo electrónico"/><br>
+                </form>
+                <form action="" class="form-nuevo-usuario">
+                    <label for="Contraseña">Contraseña</label><br>
+                    <input type="text" name="Nombre de usuario o correo electrónico"/><br>
+                </form>
+                <form action="" class="check-recordarme">
+                    <input type="checkbox" name="RecordarUsuario">
+                    <label for="Recordarme"> Recordarme</label>
+                </form>
+                <div>
+                    <button name="button" class="boton-perfil">INGRESAR <!-- BOTON PARA INGRESAR--> 
+                    </button>
+                    <a href="" class="olvide-contraseña">Olvidé mi contraseña</a>
+                </div>
+            </div>
+            <div class="perfil-reg"> <!-- CREAR USUARIO-->
+                <h2>REGISTRARSE</h2>
+                <form action="" class="form-nuevo-usuario"> 
+                    <label for="Direccion de correo electrónico">Direccion de correo electrónico</label><br>
+                    <input type="text" name="Direccion de correo electrónico"/><br>
+                </form>
+                <p> Se enviará un enlace a tu correo, para establecer una contraseña. 
+                </p>
+                <div>
+                    <button name="button" class="boton-perfil">REGISTRARME <!-- BOTON PARA registrame-->
+                    </button>
+                </div>
+            </div>
         </section>
-        <section> <!-- CREAR USUARIO-->
-            <h2>REGISTRARSE</h2>
-            <form action="" class="form-nuevo-usuario"> 
-                <label for="Direccion de correo electrónico">Direccion de correo electrónico</label><br>
-                <input type="text" name="Direccion de correo electrónico"/><br>
-            </form>
-            <p> Se enviará un enlace a tu correo, para establecer una contraseña. 
-            </p>
-            <button name="button" class="boton-perfil">REGISTRARME <!-- BOTON PARA registrame-->
-            </button>
-        </section>
+
     </main>
 
     <footer>

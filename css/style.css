@@ -29,7 +29,6 @@ h3{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
 }
 
 h4{
@@ -38,6 +37,14 @@ h4{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+}
+
+h5{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
 }
 
 
@@ -84,12 +91,18 @@ h4{
     column-gap: 16px;
 }
 
+.box4{ /* BOTON DE BUSCAR SOLO PARA VISTA MOBILE*/
+    display: none;
+}
+
 /* MAIN INDEX*/
 
 .main-foto-principal{  /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
-    /* COMO HACER PARA QUE NO se recorte la imagen!????????????????????*/
+    height: 682px;
     overflow: hidden;
-    object-fit: scale-down;
+}
+.main-foto-principal img{
+    width: 100%;
 }
 
 .main-sec2 h2{ /*SECCION 2 del main (H2)*/
@@ -99,14 +112,15 @@ h4{
     padding-top: 24px;
 }
 
+.main-sec2 section{
 
-
+}
 .cards-productos-inicio{
     display: flex;
     flex-direction: column;
     height: 491px;
     row-gap: 2px;
-    align-items: center
+    align-items: center;
 }
 .cards-productos-inicio img{
     width: 328px;
@@ -125,6 +139,7 @@ h4{
     text-align: center;
 }
 
+
 .main-sec3{
     background-color: #0000000A;
     height: 143px;
@@ -132,11 +147,12 @@ h4{
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .main-sec3 section{
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 38px;
 }
 
@@ -147,16 +163,22 @@ h4{
     margin-right: 120px;
     justify-content: space-between;
     align-items: center;
+    align-content: flex-start;
+    text-align: center;
 }
 .main-sec4 div{
+    display: flex;
+    flex-direction: column;
     font-family: 'Lexend Giga';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    align-items: flex-start;
+    align-items: center;
 }
-
+.main-sec4 div:hover{  /*ANIMACION*/
+    transform: translate(-3px) scale(1.05);
+}
 
 /* HTML: CATEGORIA NUEVO - MAIN CATEGORIA NUEVO*/
 .historial-main{
@@ -303,33 +325,74 @@ h4{
 }
 
 
-
-.img-xproducto{
-    height: 899px;
-    width: 675px;
+/*producto-biker-cleo*/
+.x-producto{ /*luego del historial, en la pagina de biker cleo (puede ir para cualquier articulo igual*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-bottom: 116px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center; /*el contenedor se adapta a los items*/
 }
 
-.articulosrelacionados{
+.x-p1 img{
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+    flex-wrap: wrap
+}
+.x-p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.x-p2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.x-p2 div div{
+    display: inline;
+}
+
+.articulosrelacionados h2{
+    display: flex;
     background-color: #0000000A;
     height: 66px;
+    align-items: center;
+    justify-content: center;
+}
+.cards-art-relacionados{
+    height: 561;
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 11px;
+    margin-bottom: 55px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "car-1 none none none";
+    column-gap: 20px;
 }
 
-.form-nuevo-usuario{
+.car-1 img{
+    width: 328px;
+    height: 440px;
+}
+.car-1 a{
+    text-decoration: none;
+    color: black;
     font-family: 'Lexend Giga';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
 }
-
-.form-nuevo-usuario input{
-    box-sizing: border-box;
-    width: 651px;
-    height: 55px;
-    left: 35px;
-    top: 319px;
-    background: #FFFFFF;
-    border: 1px solid rgba(125, 125, 125, 0.8);
+.car-1{
+    background-color: #ffffff;
+    text-align: center;
 }
 
 p{  /* de la pagina del perfil  */
@@ -344,8 +407,6 @@ p{  /* de la pagina del perfil  */
     box-sizing: border-box;
     width: 276px;
     height: 80px;
-    left: 208px;
-    top: 586px;
     background-color: #7D7D7D;
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-family: 'Lexend Giga';
@@ -370,6 +431,39 @@ p{  /* de la pagina del perfil  */
     color: #000000;
 }
 
+.boton-agregar-carrito{
+    box-sizing: border-box;
+    width: 276px;
+    height: 80px;
+    background-color: #7D7D7D;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+
+
+/* HTML PERFIL  */
+.form-nuevo-usuario{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.form-nuevo-usuario input{
+    box-sizing: border-box;
+    width: 646px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid rgba(125, 125, 125, 0.8);
+}
+
 .check-recordarme input{
     width: 22px;
     height: 22px;
@@ -391,15 +485,87 @@ p{  /* de la pagina del perfil  */
     font-size: 20px;
 }
 
-.preguntas-frecuentes{
-    color: black;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+.perfil-acc-reg{
+    display: flex;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 64px;
+    height: 607px;
+    gap: 77px;
+}
+.perfil-acc h2{
+    margin-bottom: 46px;
+}
+.perfil-acc form{
+    margin-bottom: 24px;
+}
+.check-recordarme{
+    display: flex;
+    align-items: center;
+}
+.perfil-acc div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+    gap: 15px;
+}
+.perfil-reg h2{
+    margin-bottom: 46px;
+}
+.perfil-reg form{
+    margin-bottom: 24px;
+}
+.perfil-reg p{
+    margin-bottom: 136px;
+}
+.perfil-reg div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+/*HTML CONSULTAS*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.contenedor div{
+    position:relative;
+    height: 130px;
+    width: 100vh;
+}
+.contenedor div .capa{
+    position: absolute;
+    top: 0;
+    background: rgba(134, 134, 134, 0.284);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: start;
+}
+.contenedor div:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor div .capa p{
+    color: rgb(1, 0, 0);
+    font-size: 14px;
+    line-height: 1.5; /*espaciado entre lineas del parrafo*/
+    width: 100vh;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+
+
+
+
+/*FOOTER de todas las paginas*/
 footer{
     background-color: gray;
     color: white;
@@ -407,7 +573,7 @@ footer{
     flex-direction: row; /* row = eje principal horizontal X */
     height: 186px;
     flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
-justify-content: space-around;/* justify-content: distribuye/ordena en eje X*/
+    justify-content: space-around;/* justify-content: distribuye/ordena en eje X*/
     align-items: center; /* align: alinea en eje Y*/
 }
 
@@ -438,4 +604,93 @@ justify-content: space-around;/* justify-content: distribuye/ordena en eje X*/
     flex-direction: row-reverse;
     align-items: center;
     gap: 7px;
+}
+
+.tabbar-mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px){  /* RESPONSIVE: PARA CELULAR */
+.header1 {
+    display: none;
+}
+.header2{
+    display: flex;
+    flex-direction: row; /* row = eje principal horizontal X */
+    height: 116px;
+    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
+    align-items: center; /* align: alinea en eje Y*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.box1{ /* ref: donde esta el menu hamburguesa*/
+    display: none;
+}
+.box3 div{ /* ref: iconos del header derecha*/
+    display: none;
+}
+.box4 form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+.buscar-mobile{
+    width: 64px;
+    height: 22px;
+    border: none;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.main-foto-principal{
+        max-width: 100%;
+        height: 597px;
+}
+.main-sec2{
+    display: none;
+}
+.main-sec3{
+    display: none;
+}
+.main-sec4{
+    display: none;
+}
+
+footer{
+    background-color: #F7F7F7;
+    height: 54px;
+}
+.footer-1{
+    display: none;
+}
+.footer-2{
+    display: none;
+}
+.footer-3{
+    display: none;
+}
+.tabbar-mobile{
+    height: 54px;
+    background-color: #F7F7F7;
+}
+
 }
