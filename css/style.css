@@ -63,32 +63,35 @@ h5{
     font-family: 'Kantumruy Pro', sans-serif;
     font-family: 'Lexend Giga', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 22px;
 }
 
 .header2{
     display: flex;
     flex-direction: row; /* row = eje principal horizontal X */
-    height: 122px;
     flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
     justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
     align-items: center; /* align: alinea en eje Y*/
     margin-left: 15px;
     margin-right: 15px;
+
 }
 
 .box1{ /* ref: donde esta el menu hamburguesa*/
     flex-direction: row;
     align-items: center;
     column-gap: 13px;
+    margin-top: 44px;
+    margin-bottom: 44px;
 }
+
 
 .box3{ /* ref: iconos del header derecha*/
     flex-direction: row;
     align-items: center;
     column-gap: 16px;
+    margin-top: 44px;
+    margin-bottom: 44px;
 }
 
 .box4{ /* BOTON DE BUSCAR SOLO PARA VISTA MOBILE*/
@@ -98,37 +101,45 @@ h5{
 /* MAIN INDEX*/
 
 .main-foto-principal{  /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
-    height: 682px;
+    width: 100vw;
     overflow: hidden;
 }
 .main-foto-principal img{
     width: 100%;
+    max-height: 682px;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .main-sec2 h2{ /*SECCION 2 del main (H2)*/
-    height: 66px;
     flex-direction: row-reverse; /*reverse para que aline en base al eje Y vertical el text aling*/
     text-align: center;
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.main-sec2 section{
-
+.main-sec2 section{ /*como estaran organizadas las card en general del INDEX*/
+    display: flex;
+    flex-direction: row; /* row = eje principal horizontal X */
+    flex-wrap: wrap;/* flex-wrap: wrap; = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
+    align-items: center; /* align: alinea en eje Y*/
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 73px;
 }
-.cards-productos-inicio{
+.main-sec2 section div{
     display: flex;
     flex-direction: column;
     height: 491px;
     row-gap: 2px;
     align-items: center;
 }
-.cards-productos-inicio img{
+.main-sec2 section div img{
     width: 328px;
     height: 440px;
-    left: 36px;
-    top: 902px;
 }
-.cards-productos-inicio a{
+.main-sec2 section div a{
     text-decoration: none;
     color: black;
     font-family: 'Lexend Giga';
@@ -142,7 +153,7 @@ h5{
 
 .main-sec3{
     background-color: #0000000A;
-    height: 143px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,17 +161,27 @@ h5{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.main-sec3 h2{
+    margin-top: 22px;
+    text-align: center;
+}
+
 .main-sec3 section{
     display: flex;
     flex-direction: row;
     gap: 38px;
+    margin-bottom: 22px;
 }
 
 .main-sec4{
     display: flex;
-    height: 299px;
+    margin-top: 66px;
+    margin-bottom: 66px;
     margin-left: 120px;
     margin-right: 120px;
+    column-gap: 40px;
+    row-gap: 20px;
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
@@ -237,18 +258,6 @@ h5{
 }
 
 
-
-.main-sec2 section{ /*como estaran organizadas las card en general del INDEX*/
-    display: flex;
-    flex-direction: row; /* row = eje principal horizontal X */
-    height: 560px; /*HEIGHT es el alto*/
-    flex-wrap: wrap;/* flex-wrap: wrap; = que los elementos se acomodes segun el tamaño de pantalla*/
-    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
-    align-items: center; /* align: alinea en eje Y*/
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 .cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
     display: grid;
     margin-left: 33px;
@@ -262,6 +271,7 @@ h5{
     row-gap: 45px;
     justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
     justify-items: center; /*el contenedor se adapta a los items*/
+    margin-bottom: 30px;
 }
 .cards-new-cont a{
     text-decoration: none;
@@ -278,7 +288,7 @@ h5{
 .cnc-1{
     background-color: blue;
     grid-area: cnc-1;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -286,7 +296,7 @@ h5{
 .cnc-2{
     background-color: rgb(11, 11, 24);
     grid-area: cnc-2;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -294,7 +304,7 @@ h5{
 .cnc-3{
     background-color: rgb(103, 171, 110);
     grid-area: cnc-3;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -302,7 +312,7 @@ h5{
 .cnc-4{
     background-color: rgb(220, 188, 213);
     grid-area: cnc-4;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -310,7 +320,7 @@ h5{
 .cnc-5{
     background-color: rgb(234, 255, 0);
     grid-area: cnc-5;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -318,7 +328,7 @@ h5{
 .cnc-6{
     background-color: rgb(0, 174, 255);
     grid-area: cnc-6;
-    height: 675px;
+    height: 100%;
     text-align: center;
     gap: 15px;
     justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
@@ -536,13 +546,10 @@ p{  /* de la pagina del perfil  */
 }
 .contenedor div{
     position:relative;
-    height: 130px;
-    width: 100vh;
+    height: 135px;
 }
 .contenedor div .capa{
-    position: absolute;
-    top: 0;
-    background: rgba(134, 134, 134, 0.284);
+    height: 100px;
     transition: all 400ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -556,13 +563,9 @@ p{  /* de la pagina del perfil  */
     color: rgb(1, 0, 0);
     font-size: 14px;
     line-height: 1.5; /*espaciado entre lineas del parrafo*/
-    width: 100vh;
-    margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 45px;
+    margin-top: 15px;
 }
-
-
-
 
 
 /*FOOTER de todas las paginas*/
@@ -615,82 +618,241 @@ footer{
 
 
 
+@media (max-width: 768px){  /* RESPONSIVE: PARA TABLET */
+    .header1{
+        /* Rectangulo 1 */
+        height: 20px;
+        text-align: center;
+        width: 100%;
+}
+.header1 p{
+    /* parrafo del rectagulo 1 */
+    background-color: #F5F5F5;
+    color: black;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: 'Lexend Giga', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 576px){  /* RESPONSIVE: PARA CELULAR */
-.header1 {
+.box1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box1 h1{ /* donde dice MENU al lado de la hamburguesa*/
     display: none;
 }
-.header2{
-    display: flex;
-    flex-direction: row; /* row = eje principal horizontal X */
-    height: 116px;
-    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
-    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
-    align-items: center; /* align: alinea en eje Y*/
-    margin-left: 15px;
-    margin-right: 15px;
+.box2 h5{
+    font-size: 36px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.box1{ /* ref: donde esta el menu hamburguesa*/
-    display: none;
-}
-.box3 div{ /* ref: iconos del header derecha*/
-    display: none;
-}
-.box4 form {
-    display: flex;
+.box3{ /* ref: iconos del header derecha*/
     flex-direction: row;
     align-items: center;
-    gap: 9px;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.buscar-mobile{
-    width: 64px;
-    height: 22px;
-    border: none;
-    font-family: 'SF Pro Text';
+
+
+.main-sec4 div{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Giga';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 10px;
+    line-height: 20px;
+    align-items: center;
 }
 
-.main-foto-principal{
-        max-width: 100%;
-        height: 597px;
-}
-.main-sec2{
-    display: none;
-}
-.main-sec3{
-    display: none;
-}
+
 .main-sec4{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
 }
 
-footer{
-    background-color: #F7F7F7;
-    height: 54px;
+
+
+.filtros-ordenar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 33px;
+    margin-right: 33px;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
 }
-.footer-1{
-    display: none;
+.boton-filtros{
+    box-sizing: border-box;
+    width: 90px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
 }
-.footer-2{
-    display: none;
+.ordenar1 select{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
 }
-.footer-3{
-    display: none;
+
+
+
+.cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cnc-1 cnc-2 cnc-3"
+    "cnc-4 cnc-5 cnc-6";
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center; /*el contenedor se adapta a los items*/
+    margin-bottom: 20px;
 }
-.tabbar-mobile{
-    height: 54px;
-    background-color: #F7F7F7;
+.cards-new-cont a{
+    text-decoration: none;
+    color: black;
+    font-family: Lexend Giga;
+    font-size: 14px;
+    text-align: center; 
+
 }
+.cards-new-cont img{
+    height: 590 px;
+    width: 100%;
+}
+
+.cnc-1{
+    background-color: blue;
+    grid-area: cnc-1;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+.cnc-2{
+    background-color: rgb(11, 11, 24);
+    grid-area: cnc-2;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+.cnc-3{
+    background-color: rgb(103, 171, 110);
+    grid-area: cnc-3;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+.cnc-4{
+    background-color: rgb(220, 188, 213);
+    grid-area: cnc-4;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+.cnc-5{
+    background-color: rgb(234, 255, 0);
+    grid-area: cnc-5;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+.cnc-6{
+    background-color: rgb(0, 174, 255);
+    grid-area: cnc-6;
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px){ 
+    .box1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .box1 h1{ /* donde dice MENU al lado de la hamburguesa*/
+        display: none;
+    }
+    .box2 h5{
+        font-size: 26px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .box3{ /* ref: iconos del header derecha*/
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.main-sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-sec2 section{
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
 
 }
