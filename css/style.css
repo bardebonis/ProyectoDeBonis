@@ -792,19 +792,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 576px){ 
     .box1{
         margin-top: 10px;
@@ -840,5 +827,8 @@ footer{
     justify-content: center;
 }
 
+.footer-1{
+    display: none;
+}
 
 }
