@@ -98,8 +98,8 @@ h5{
 /* MAIN INDEX*/
 
 .main-foto-principal{  /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
 .main-foto-principal img{
     width: 100%;
@@ -429,28 +429,6 @@ h5{
     text-align: center;
 }
 
-p{  /* de la pagina del perfil  */
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-}
-
-.boton-perfil{
-    box-sizing: border-box;
-    width: 276px;
-    height: 80px;
-    background-color: #7D7D7D;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    color: white;
-}
-
 .boton-talles{
     box-sizing: border-box;
     width: 40px;
@@ -479,9 +457,30 @@ p{  /* de la pagina del perfil  */
     color: white;
 }
 
-
-
 /* HTML PERFIL  */
+
+.boton-perfil{
+    box-sizing: border-box;
+    width: 276px;
+    height: 80px;
+    background-color: #7D7D7D;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+p{  /* de la pagina del perfil  */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
 .form-nuevo-usuario{
     font-family: 'Lexend Giga';
     font-style: normal;
