@@ -1,0 +1,76 @@
+.x-producto{ /*luego del historial, en la pagina de biker cleo (puede ir para cualquier articulo igual*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-bottom: 116px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center; /*el contenedor se adapta a los items*/
+}
+
+.xp-p1{
+    img{
+        display: flex;
+        flex-direction: column;
+        width: 675px;
+        flex-wrap: wrap
+    }
+}
+
+.x-p2{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div{
+            display: inline;
+        }
+    }
+
+}
+
+
+
+.articulosrelacionados{
+    h2{
+        display: flex;
+        background-color: #0000000A;
+        height: 66px;
+        align-items: center;
+        justify-content: center;
+    }
+    div{
+        height: 561;
+        display: grid;
+        margin-left: 33px;
+        margin-right: 33px;
+        margin-top: 11px;
+        margin-bottom: 55px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "car-1 none none none";
+        column-gap: 20px;
+        div{
+            background-color: #ffffff;
+            text-align: center;
+            img{
+                width: 328px;
+                height: 440px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: 'Lexend Giga';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+} 
+

@@ -1,0 +1,114 @@
+.main-foto-principal{  /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
+    width: 100%;
+    overflow-x: hidden;
+    img{
+        width: 100%;
+        max-height: 682px;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.main-sec2{
+    width: 100%;
+    h2{
+        flex-direction: row-reverse; /*reverse para que aline en base al eje Y vertical el text aling*/
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    section{
+        display: grid;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 73px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "c-ms2-1 c-ms2-2 c-ms2-3 c-ms2-4";
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+        justify-items: center; /*el contenedor se adapta a los items*/
+        div{
+            height: 100%;
+            text-align: center;
+            gap: 15px;
+            justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+            img{
+                background-size: cover;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: Lexend Giga;
+                font-size: 20px;
+                text-align: center; 
+            }
+        }
+    }
+}
+.c-ms2-1{
+    grid-area: c-ms2-1;
+}
+.c-ms2-2{
+    grid-area: c-ms2-2;
+}
+.c-ms2-3{
+    grid-area: c-ms2-3;
+}
+.c-ms2-4{
+    grid-area: c-ms2-4;
+}
+
+
+
+.main-sec3{
+    background-color: #0000000A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    h2{
+        margin-top: 22px;
+        text-align: center;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        gap: 38px;
+        margin-bottom: 22px;
+    }
+}
+
+.main-sec4{
+    display: flex;
+    margin-top: 66px;
+    margin-bottom: 66px;
+    margin-left: 120px;
+    margin-right: 120px;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        :hover{
+            transform: translate(-3px) scale(1.05); /*ANIMACION*/
+        }
+    }
+}

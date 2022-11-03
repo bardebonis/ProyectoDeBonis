@@ -1,0 +1,45 @@
+/* HEADER*/
+/* PARTE SUPERIOR DEL HAEDER 1 */
+.header1{
+    /* Rectangulo 1 */
+    height: 33px;
+    text-align: center;
+    p{
+        background-color: #F5F5F5;
+        color: black;
+        font-family: 'Kantumruy Pro', sans-serif;
+        font-family: 'Lexend Giga', sans-serif;
+        font-style: normal;
+        font-size: 12px;
+    }
+}
+
+.header2{
+    display: flex;
+    flex-direction: row; /* row = eje principal horizontal X */
+    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
+    align-items: center; /* align: alinea en eje Y*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.box1{ /* ref: donde esta el menu hamburguesa*/
+    flex-direction: row;
+    align-items: center;
+    column-gap: 13px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.box3{ /* ref: iconos del header derecha*/
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.box4{
+    display: none;
+}

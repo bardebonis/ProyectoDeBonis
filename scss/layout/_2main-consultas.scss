@@ -1,0 +1,29 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    margin-right: 33px;
+    div{
+        position:relative;
+        height: 135px;
+    }
+}
+
+.contenedor div .capa{
+    height: 100px;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: start;
+}
+.contenedor div:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor div .capa p{
+    color: rgb(1, 0, 0);
+    font-size: 14px;
+    line-height: 1.5; /*espaciado entre lineas del parrafo*/
+    margin-left: 45px;
+    margin-top: 15px;
+}

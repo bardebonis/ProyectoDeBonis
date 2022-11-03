@@ -1,0 +1,90 @@
+p{  /* de la pagina del perfil  */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.perfil-acc-reg{
+    display: flex;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 64px;
+    height: 607px;
+    gap: 77px;
+}
+
+.perfil-acc{
+    h2{
+        margin-bottom: 46px;
+    }
+    form{
+        margin-bottom: 24px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 56px;
+        gap: 15px;
+    }
+}
+
+.perfil-reg{
+    h2{
+        margin-bottom: 46px;
+    }
+    form{
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 136px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.form-nuevo-usuario{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    input{
+        box-sizing: border-box;
+        width: 646px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 1px solid rgba(125, 125, 125, 0.8);
+    }
+}
+
+.check-recordarme{
+    display: flex;
+    align-items: center;
+    input{
+        width: 22px;
+        height: 22px;
+        background-color: #D9D9D9;
+    }
+    label{
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+.olvide-contraseña{
+    text-decoration: none;
+    color: rgba(125, 125, 125, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-size: 20px;
+}

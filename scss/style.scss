@@ -1,0 +1,65 @@
+@import "./base/reset";
+@import "./base/typo";
+
+@import "./utilities/variable";
+@import "./utilities/mixins";
+
+@import "./components/button";
+
+@import "./layout/1header";
+@import "./layout/2main-index";
+@import "./layout/2main-categoria-nuevo";
+@import "./layout/2main-biker-cleo";
+@import "./layout/2main-perfil";
+@import "./layout/2main-consultas";
+@import "./layout/3footer";
+
+@import "./layout/respos-tablet";
+@import "./layout/respon-mobile";
+
+
+
+
+h1{
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h2{
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h3{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h5{
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+

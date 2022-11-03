@@ -1,272 +1,14 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} /* RESSET: ponemos esto siempre para que se vea en todos los navegadores igual,
-que no se genere un scroll horizontal */
+@charset "UTF-8";
 
-h1{
-    color: black;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2{
-    color: black;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-}
-
-h3{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-h4{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-h5{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-}
-
-
-
-/* HEADER*/
-/* PARTE SUPERIOR DEL HAEDER 1 */
-.header1{
-        /* Rectangulo 1 */
-        height: 33px;
-        text-align: center;
-}
-.header1 p{
-    /* parrafo del rectagulo 1 */
-    background-color: #F5F5F5;
-    color: black;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-family: 'Lexend Giga', sans-serif;
-    font-style: normal;
-    font-size: 12px;
-}
-
-.header2{
-    display: flex;
-    flex-direction: row; /* row = eje principal horizontal X */
-    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
-    justify-content: space-between;/* justify-content: distribuye/ordena en eje X*/
-    align-items: center; /* align: alinea en eje Y*/
-    margin-left: 15px;
-    margin-right: 15px;
-
-}
-
-.box1{ /* ref: donde esta el menu hamburguesa*/
-    flex-direction: row;
-    align-items: center;
-    column-gap: 13px;
-    margin-top: 44px;
-    margin-bottom: 44px;
-}
-
-
-.box3{ /* ref: iconos del header derecha*/
-    flex-direction: row;
-    align-items: center;
-    column-gap: 16px;
-    margin-top: 44px;
-    margin-bottom: 44px;
-}
-
-
-/* MAIN INDEX*/
-
-.main-foto-principal{  /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
-    width: 100%;
-    overflow-x: hidden;
-}
-.main-foto-principal img{
-    width: 100%;
-    max-height: 682px;
-    background-size: cover;
-    object-fit: cover;
-}
-
-.main-sec2 h2{ /*SECCION 2 del main (H2)*/
-    flex-direction: row-reverse; /*reverse para que aline en base al eje Y vertical el text aling*/
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.main-sec2{
-    width: 100%;
-}
-
-.main-sec2-cards{ /*como estaran organizadas las card en general del INDEX*/
-    display: grid;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 73px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "c-ms2-1 c-ms2-2 c-ms2-3 c-ms2-4";
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
-    justify-items: center; /*el contenedor se adapta a los items*/
-}
-
-.main-sec2-cards a{
-    text-decoration: none;
-    color: black;
-    font-family: Lexend Giga;
-    font-size: 20px;
-    text-align: center; 
-}
-.main-sec2-cards img{
-    background-size: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.c-ms2-1{
-    grid-area: c-ms2-1;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-
-.c-ms2-2{
-    grid-area: c-ms2-2;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-
-.c-ms2-3{
-    grid-area: c-ms2-3;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-
-.c-ms2-4{
-    grid-area: c-ms2-4;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-
-
-.main-sec3{
-    background-color: #0000000A;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.main-sec3 h2{
-    margin-top: 22px;
-    text-align: center;
-}
-
-.main-sec3 section{
-    display: flex;
-    flex-direction: row;
-    gap: 38px;
-    margin-bottom: 22px;
-}
-
-.main-sec4{
-    display: flex;
-    margin-top: 66px;
-    margin-bottom: 66px;
-    margin-left: 120px;
-    margin-right: 120px;
-    column-gap: 40px;
-    row-gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    text-align: center;
-}
-.main-sec4 div{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-}
-.main-sec4 div:hover{  /*ANIMACION*/
-    transform: translate(-3px) scale(1.05);
-}
-
-/* HTML: CATEGORIA NUEVO - MAIN CATEGORIA NUEVO*/
-.historial-main{
-    display: flex;
-    flex-direction: row;
-    height: 37px;
-    margin-left: 33px;
-    align-content: center;
-}
-.historial-main a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-}
-.historial-main h5{
-    color: #7D7D7D;
-}
-
-.filtros-ordenar{
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    margin-left: 33px;
-    margin-right: 33px;
-    align-content: center;
-    justify-content: space-between;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-}
-.boton-filtros{
+/* RESSET: ponemos esto siempre para que se vea en todos los navegadores igual,
+    que no se genere un scroll horizontal */
+.boton-filtros {
     box-sizing: border-box;
     width: 125px;
     height: 40px;
@@ -279,157 +21,22 @@ h5{
     line-height: 25px;
     color: #000000;
 }
-.ordenar1 select{
+
+.boton-perfil {
+    box-sizing: border-box;
+    width: 276px;
+    height: 80px;
+    background-color: #7D7D7D;
+    border: 1px solid rgba(0, 0, 0, 0.8);
     font-family: 'Lexend Giga';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
 }
 
-
-.cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
-    display: grid;
-    margin-left: 33px;
-    margin-right: 33px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "cnc-1 cnc-2 cnc-3"
-    "cnc-4 cnc-5 cnc-6";
-    column-gap: 20px;
-    row-gap: 45px;
-    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
-    justify-items: center; /*el contenedor se adapta a los items*/
-    margin-bottom: 30px;
-}
-.cards-new-cont a{
-    text-decoration: none;
-    color: black;
-    font-family: Lexend Giga;
-    font-size: 20px;
-    text-align: center; 
-}
-.cards-new-cont img{
-    height: 590 px;
-    width: 100%;
-}
-
-.cnc-1{
-    grid-area: cnc-1;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-.cnc-2{
-    grid-area: cnc-2;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-.cnc-3{
-    grid-area: cnc-3;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-.cnc-4{
-    grid-area: cnc-4;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-.cnc-5{
-    grid-area: cnc-5;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-.cnc-6{
-    grid-area: cnc-6;
-    height: 100%;
-    text-align: center;
-    gap: 15px;
-    justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
-}
-
-
-/*producto-biker-cleo*/
-.x-producto{ /*luego del historial, en la pagina de biker cleo (puede ir para cualquier articulo igual*/
-    display: grid;
-    margin-left: 33px;
-    margin-right: 33px;
-    margin-bottom: 116px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
-    justify-items: center; /*el contenedor se adapta a los items*/
-}
-
-.x-p1 img{
-    display: flex;
-    flex-direction: column;
-    width: 675px;
-    flex-wrap: wrap
-}
-.x-p2 {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
-}
-.x-p2 div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.x-p2 div div{
-    display: inline;
-}
-
-.articulosrelacionados h2{
-    display: flex;
-    background-color: #0000000A;
-    height: 66px;
-    align-items: center;
-    justify-content: center;
-}
-.cards-art-relacionados{
-    height: 561;
-    display: grid;
-    margin-left: 33px;
-    margin-right: 33px;
-    margin-top: 11px;
-    margin-bottom: 55px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "car-1 none none none";
-    column-gap: 20px;
-}
-
-.car-1 img{
-    width: 328px;
-    height: 440px;
-}
-.car-1 a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-}
-.car-1{
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.boton-talles{
+.boton-talles {
     box-sizing: border-box;
     width: 40px;
     height: 40px;
@@ -443,7 +50,7 @@ h5{
     color: #000000;
 }
 
-.boton-agregar-carrito{
+.boton-agregar-carrito {
     box-sizing: border-box;
     width: 276px;
     height: 80px;
@@ -457,68 +64,387 @@ h5{
     color: white;
 }
 
-/* HTML PERFIL  */
+/* HEADER*/
+/* PARTE SUPERIOR DEL HAEDER 1 */
+.header1 {
+    /* Rectangulo 1 */
+    height: 33px;
+    text-align: center;
+}
 
-.boton-perfil{
-    box-sizing: border-box;
-    width: 276px;
-    height: 80px;
-    background-color: #7D7D7D;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-family: 'Lexend Giga';
+.header1 p {
+    background-color: #F5F5F5;
+    color: black;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: 'Lexend Giga', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    color: white;
+    font-size: 12px;
 }
 
-p{  /* de la pagina del perfil  */
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+.header2 {
+    display: flex;
+    flex-direction: row;
+    /* row = eje principal horizontal X */
+    flex-wrap: wrap;
+    /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: space-between;
+    /* justify-content: distribuye/ordena en eje X*/
+    align-items: center;
+    /* align: alinea en eje Y*/
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.form-nuevo-usuario{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+.box1 {
+    /* ref: donde esta el menu hamburguesa*/
+    flex-direction: row;
+    align-items: center;
+    column-gap: 13px;
+    margin-top: 44px;
+    margin-bottom: 44px;
 }
 
-.form-nuevo-usuario input{
-    box-sizing: border-box;
-    width: 646px;
-    height: 55px;
-    background: #FFFFFF;
-    border: 1px solid rgba(125, 125, 125, 0.8);
+.box3 {
+    /* ref: iconos del header derecha*/
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 44px;
+    margin-bottom: 44px;
 }
 
-.check-recordarme input{
-    width: 22px;
-    height: 22px;
-    background-color: #D9D9D9;
-}
-.check-recordarme label{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+.box4 {
+    display: none;
 }
 
-.olvide-contraseña{
+.main-foto-principal {
+    /*SECCION 1 del main (imagen grande q se ve debajo del header)*/
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-foto-principal img {
+    width: 100%;
+    max-height: 682px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.main-sec2 {
+    width: 100%;
+}
+
+.main-sec2 h2 {
+    flex-direction: row-reverse;
+    /*reverse para que aline en base al eje Y vertical el text aling*/
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.main-sec2 section {
+    display: grid;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 73px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "c-ms2-1 c-ms2-2 c-ms2-3 c-ms2-4";
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center;
+    /*el contenedor se adapta a los items*/
+}
+
+.main-sec2 section div {
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center;
+    /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+
+.main-sec2 section div img {
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-sec2 section div a {
     text-decoration: none;
-    color: rgba(125, 125, 125, 0.8);
-    font-family: 'Lexend Giga';
-    font-style: normal;
+    color: black;
+    font-family: Lexend Giga;
     font-size: 20px;
+    text-align: center;
 }
 
-.perfil-acc-reg{
+.c-ms2-1 {
+    grid-area: c-ms2-1;
+}
+
+.c-ms2-2 {
+    grid-area: c-ms2-2;
+}
+
+.c-ms2-3 {
+    grid-area: c-ms2-3;
+}
+
+.c-ms2-4 {
+    grid-area: c-ms2-4;
+}
+
+.main-sec3 {
+    background-color: #0000000A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-sec3 h2 {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.main-sec3 section {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    margin-bottom: 22px;
+}
+
+.main-sec4 {
+    display: flex;
+    margin-top: 66px;
+    margin-bottom: 66px;
+    margin-left: 120px;
+    margin-right: 120px;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.main-sec4 div {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+}
+
+.main-sec4 div :hover {
+    transform: translate(-3px) scale(1.05);
+    /*ANIMACION*/
+}
+
+/* HTML: CATEGORIA NUEVO - MAIN CATEGORIA NUEVO*/
+.historial-main {
+    display: flex;
+    flex-direction: row;
+    height: 37px;
+    margin-left: 33px;
+    align-content: center;
+}
+
+.historial-main a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.historial-main h4 {
+    color: #7D7D7D;
+}
+
+.filtros-ordenar {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-left: 33px;
+    margin-right: 33px;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ordenar1 select {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.cards-new-cont {
+    /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "cnc-1 cnc-2 cnc-3"
+        "cnc-4 cnc-5 cnc-6";
+    column-gap: 20px;
+    row-gap: 45px;
+    justify-content: center;
+    /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center;
+    /*el contenedor se adapta a los items*/
+    margin-bottom: 30px;
+}
+
+.cards-new-cont div {
+    height: 100%;
+    text-align: center;
+    gap: 15px;
+    justify-self: center;
+    /*alinea solo lo que esta dentro de este contenedor en eje x*/
+}
+
+.cards-new-cont div a {
+    text-decoration: none;
+    color: black;
+    font-family: Lexend Giga;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cards-new-cont div img {
+    height: 590 px;
+    width: 100%;
+}
+
+.cnc-1 {
+    grid-area: cnc-1;
+}
+
+.cnc-2 {
+    grid-area: cnc-2;
+}
+
+.cnc-3 {
+    grid-area: cnc-3;
+}
+
+.cnc-4 {
+    grid-area: cnc-4;
+}
+
+.cnc-5 {
+    grid-area: cnc-5;
+}
+
+.cnc-6 {
+    grid-area: cnc-6;
+}
+
+.x-producto {
+    /*luego del historial, en la pagina de biker cleo (puede ir para cualquier articulo igual*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-bottom: 116px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: center;
+    /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center;
+    /*el contenedor se adapta a los items*/
+}
+
+.xp-p1 img {
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+    flex-wrap: wrap;
+}
+
+.x-p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.x-p2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.x-p2 div div {
+    display: inline;
+}
+
+.articulosrelacionados h2 {
+    display: flex;
+    background-color: #0000000A;
+    height: 66px;
+    align-items: center;
+    justify-content: center;
+}
+
+.articulosrelacionados div {
+    height: 561;
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 11px;
+    margin-bottom: 55px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "car-1 none none none";
+    column-gap: 20px;
+}
+
+.articulosrelacionados div div {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.articulosrelacionados div div img {
+    width: 328px;
+    height: 440px;
+}
+
+.articulosrelacionados div div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+p {
+    /* de la pagina del perfil  */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.perfil-acc-reg {
     display: flex;
     margin-left: 33px;
     margin-right: 33px;
@@ -526,87 +452,138 @@ p{  /* de la pagina del perfil  */
     height: 607px;
     gap: 77px;
 }
-.perfil-acc h2{
+
+.perfil-acc h2 {
     margin-bottom: 46px;
 }
-.perfil-acc form{
+
+.perfil-acc form {
     margin-bottom: 24px;
 }
-.check-recordarme{
-    display: flex;
-    align-items: center;
-}
-.perfil-acc div{
+
+.perfil-acc div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 56px;
     gap: 15px;
 }
-.perfil-reg h2{
+
+.perfil-reg h2 {
     margin-bottom: 46px;
 }
-.perfil-reg form{
+
+.perfil-reg form {
     margin-bottom: 24px;
 }
-.perfil-reg p{
+
+.perfil-reg p {
     margin-bottom: 136px;
 }
-.perfil-reg div{
+
+.perfil-reg div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.form-nuevo-usuario {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
 
+.form-nuevo-usuario input {
+    box-sizing: border-box;
+    width: 646px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid rgba(125, 125, 125, 0.8);
+}
 
-/*HTML CONSULTAS*/
-.contenedor{
+.check-recordarme {
+    display: flex;
+    align-items: center;
+}
+
+.check-recordarme input {
+    width: 22px;
+    height: 22px;
+    background-color: #D9D9D9;
+}
+
+.check-recordarme label {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.olvide-contraseña {
+    text-decoration: none;
+    color: rgba(125, 125, 125, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.contenedor {
     display: flex;
     flex-direction: column;
     margin-left: 33px;
     margin-right: 33px;
 }
-.contenedor div{
-    position:relative;
+
+.contenedor div {
+    position: relative;
     height: 135px;
 }
-.contenedor div .capa{
+
+.contenedor div .capa {
     height: 100px;
     transition: all 400ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: start;
 }
-.contenedor div:hover > .capa{
+
+.contenedor div:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
-.contenedor div .capa p{
-    color: rgb(1, 0, 0);
+
+.contenedor div .capa p {
+    color: #010000;
     font-size: 14px;
-    line-height: 1.5; /*espaciado entre lineas del parrafo*/
+    line-height: 1.5;
+    /*espaciado entre lineas del parrafo*/
     margin-left: 45px;
     margin-top: 15px;
 }
 
-
-/*FOOTER de todas las paginas*/
-footer{
+footer {
     background-color: gray;
     color: white;
     display: flex;
-    flex-direction: row; /* row = eje principal horizontal X */
+    flex-direction: row;
+    /* row = eje principal horizontal X */
     height: 186px;
-    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
-    justify-content: space-around;/* justify-content: distribuye/ordena en eje X*/
-    align-items: center; /* align: alinea en eje Y*/
+    flex-wrap: wrap;
+    /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: space-around;
+    /* justify-content: distribuye/ordena en eje X*/
+    align-items: center;
+    /* align: alinea en eje Y*/
 }
 
 .lista-productos-footer li {
     list-style: none;
 }
-.lista-productos-footer li a{
+
+.lista-productos-footer a {
     text-decoration: none;
     color: white;
     font-family: 'Lexend Giga';
@@ -616,196 +593,197 @@ footer{
     line-height: 18px;
 }
 
-.footer-3{
+.footer-3 {
     display: flex;
-    flex-direction: column; /* row = eje principal horizontal X */
+    flex-direction: column;
+    /* row = eje principal horizontal X */
     height: 112px;
-    flex-wrap: wrap; /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
-    justify-content: flex-start;/* justify-content: distribuye/ordena en eje X*/
-    align-items: flex-start; /* align: alinea en eje Y*/
+    flex-wrap: wrap;
+    /* wrpa = que los elementos se acomodes segun el tamaño de pantalla*/
+    justify-content: flex-start;
+    /* justify-content: distribuye/ordena en eje X*/
+    align-items: flex-start;
+    /* align: alinea en eje Y*/
     gap: 5px;
 }
-.footer-3 div{
+
+.footer-3 div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 7px;
 }
 
-.tabbar-mobile{
+.tabbar-mobile {
     display: none;
 }
 
+@media (max-width: 768px) {
 
-
-
-
-
-@media (max-width: 768px){  /* RESPONSIVE: PARA TABLET */
-    .header1{
+    /* RESPONSIVE: PARA TABLET */
+    .header1 {
         /* Rectangulo 1 */
         height: 20px;
         text-align: center;
         width: 100%;
-}
-.header1 p{
-    /* parrafo del rectagulo 1 */
-    background-color: #F5F5F5;
-    color: black;
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-family: 'Lexend Giga', sans-serif;
-    font-style: normal;
-    font-size: 10px;
-}
+    }
 
-.box1{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.box1 h1{ /* donde dice MENU al lado de la hamburguesa*/
-    display: none;
-}
-.box2 h5{
-    font-size: 36px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.box3{ /* ref: iconos del header derecha*/
-    flex-direction: row;
-    align-items: center;
-    column-gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    .header1 p {
+        background-color: #F5F5F5;
+        color: black;
+        font-family: 'Kantumruy Pro', sans-serif;
+        font-family: 'Lexend Giga', sans-serif;
+        font-style: normal;
+        font-size: 10px;
+    }
 
+    .box1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
+    .box1 h1 {
+        display: none;
+    }
 
+    .box2 h5 {
+        font-size: 36px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
+    .box3 {
+        /* ref: iconos del header derecha*/
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
+    .main-sec4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 44px;
+        margin-right: 44px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+        text-align: center;
+        column-gap: 20px;
+        row-gap: 10px;
+        justify-content: center;
+    }
 
+    .main-sec4 div {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        align-items: center;
+    }
 
+    .filtros-ordenar {
+        display: flex;
+        flex-direction: row;
+        margin-left: 33px;
+        margin-right: 33px;
+        align-content: center;
+        justify-content: space-between;
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+    }
 
-.main-sec4 div{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 20px;
-    align-items: center;
-}
+    .boton-filtros {
+        box-sizing: border-box;
+        width: 90px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: #000000;
+    }
 
+    .ordenar1 select {
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+    }
 
-.main-sec4{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 44px;
-    margin-right: 44px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    text-align: center;
-    column-gap: 20px;
-    row-gap: 10px;
-    justify-content: center;
-}
+    .cards-new-cont {
+        /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
+        display: grid;
+        margin-left: 33px;
+        margin-right: 33px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "cnc-1 cnc-2 cnc-3"
+            "cnc-4 cnc-5 cnc-6";
+        column-gap: 10px;
+        row-gap: 20px;
+        justify-content: center;
+        /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+        justify-items: center;
+        /*el contenedor se adapta a los items*/
+        margin-bottom: 20px;
+    }
 
+    .cards-new-cont a {
+        text-decoration: none;
+        color: black;
+        font-family: Lexend Giga;
+        font-size: 14px;
+        text-align: center;
+    }
 
+    .cards-new-cont img {
+        height: 590 px;
+        width: 100%;
+    }
 
-.filtros-ordenar{
-    display: flex;
-    flex-direction: row;
-    margin-left: 33px;
-    margin-right: 33px;
-    align-content: center;
-    justify-content: space-between;
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-}
-.boton-filtros{
-    box-sizing: border-box;
-    width: 90px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: #000000;
-}
-.ordenar1 select{
-    font-family: 'Lexend Giga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-}
-
-
-
-.cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
-    display: grid;
-    margin-left: 33px;
-    margin-right: 33px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "cnc-1 cnc-2 cnc-3"
-    "cnc-4 cnc-5 cnc-6";
-    column-gap: 10px;
-    row-gap: 20px;
-    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
-    justify-items: center; /*el contenedor se adapta a los items*/
-    margin-bottom: 20px;
-}
-.cards-new-cont a{
-    text-decoration: none;
-    color: black;
-    font-family: Lexend Giga;
-    font-size: 14px;
-    text-align: center; 
-}
-.cards-new-cont img{
-    height: 590 px;
-    width: 100%;
-}
-
-.main-sec2-cards a{
-    text-decoration: none;
-    color: black;
-    font-family: Lexend Giga;
-    font-size: 14px;
-    text-align: center; 
-
+    .main-sec2-cards a {
+        text-decoration: none;
+        color: black;
+        font-family: Lexend Giga;
+        font-size: 14px;
+        text-align: center;
+    }
 }
 
-
-
-
-@media (max-width: 576px){ 
-    .box1{
+@media (max-width: 576px) {
+    .box1 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .box1 h1{ /* donde dice MENU al lado de la hamburguesa*/
+
+    .box1 h1 {
         display: none;
     }
-    .box2 h5{
+
+    .box2 h5 {
         font-size: 26px;
         flex-wrap: wrap;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .box3{ /* ref: iconos del header derecha*/
+
+    .box3 {
+        /* ref: iconos del header derecha*/
         flex-direction: row;
         align-items: center;
         column-gap: 10px;
@@ -813,21 +791,61 @@ footer{
         margin-bottom: 10px;
     }
 
-.main-sec2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .main-sec2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .main-sec2 section {
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footer-1 {
+        display: none;
+    }
 }
 
-.main-sec2 section{
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+h1 {
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
 }
 
-.footer-1{
-    display: none;
+h2 {
+    color: black;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
 }
 
+h3 {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4 {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h5 {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
 }

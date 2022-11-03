@@ -1,0 +1,145 @@
+@media (max-width: 768px){  /* RESPONSIVE: PARA TABLET */
+
+.header1{
+        /* Rectangulo 1 */
+        height: 20px;
+        text-align: center;
+        width: 100%;
+        p{
+            background-color: #F5F5F5;
+            color: black;
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-family: 'Lexend Giga', sans-serif;
+            font-style: normal;
+            font-size: 10px;
+        }
+}
+
+.box1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h1{
+        display: none;
+    }
+}
+.box2{
+    h5{
+        font-size: 36px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+} 
+.box3{ /* ref: iconos del header derecha*/
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-sec4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        align-items: center;
+    }
+}
+
+
+
+.filtros-ordenar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 33px;
+    margin-right: 33px;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+.boton-filtros{
+    box-sizing: border-box;
+    width: 90px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+}
+.ordenar1{
+    select{
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+
+
+.cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cnc-1 cnc-2 cnc-3"
+    "cnc-4 cnc-5 cnc-6";
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center; /*el contenedor se adapta a los items*/
+    margin-bottom: 20px;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: Lexend Giga;
+        font-size: 14px;
+        text-align: center;
+    }img{
+        height: 590 px;
+        width: 100%;
+    }
+}
+
+
+.main-sec2-cards{
+    a{
+    text-decoration: none;
+    color: black;
+    font-family: Lexend Giga;
+    font-size: 14px;
+    text-align: center; 
+    }
+}
+
+
+}

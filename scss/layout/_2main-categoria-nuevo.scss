@@ -1,0 +1,96 @@
+/* HTML: CATEGORIA NUEVO - MAIN CATEGORIA NUEVO*/
+.historial-main{
+    @include historial-navegacion-main;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    h4{
+        color: #7D7D7D;
+    }
+}
+
+.filtros-ordenar{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-left: 33px;
+    margin-right: 33px;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ordenar1{
+    select{
+        font-family: 'Lexend Giga';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+
+.cards-new-cont{ /*como estaran organizadas las card en general de CATEGORIA NUEVO*/
+    display: grid;
+    margin-left: 33px;
+    margin-right: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cnc-1 cnc-2 cnc-3"
+    "cnc-4 cnc-5 cnc-6";
+    column-gap: 20px;
+    row-gap: 45px;
+    justify-content: center; /*JUSTIFY CONTENT mueve todo el conjunto de contenedores*/
+    justify-items: center; /*el contenedor se adapta a los items*/
+    margin-bottom: 30px;
+    div{
+        height: 100%;
+        text-align: center;
+        gap: 15px;
+        justify-self: center; /*alinea solo lo que esta dentro de este contenedor en eje x*/
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: Lexend Giga;
+            font-size: 20px;
+            text-align: center; 
+        }
+        img{
+            height: 590 px;
+            width: 100%;
+        }
+    }
+
+}
+
+.cnc-1{
+    grid-area: cnc-1;
+}
+.cnc-2{
+    grid-area: cnc-2;
+}
+.cnc-3{
+    grid-area: cnc-3;
+}
+.cnc-4{
+    grid-area: cnc-4;
+}
+.cnc-5{
+    grid-area: cnc-5;
+}
+.cnc-6{
+    grid-area: cnc-6;
+}
